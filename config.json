@@ -1,0 +1,8 @@
+dropbox = {
+	"protocol" = "https://"
+	"authEndpoint" = "www.dropbox.com"
+	"apiEndpoint" = "api.dropbox.com"
+	"apiVersion" = "2"
+	"auth" = "oauth"
+	 
+};
