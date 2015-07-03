@@ -1,8 +1,84 @@
-dropbox = {
-	"protocol" = "https://"
-	"authEndpoint" = "www.dropbox.com"
-	"apiEndpoint" = "api.dropbox.com"
-	"apiVersion" = "2"
-	"auth" = "oauth"
-	 
-};
+{
+    "dropbox": [
+        {
+            "app_info": [
+                {
+                    "app_key": "somekey",
+                    "app_secret": "somesecret"
+                }
+            ]
+        },
+        {
+            "protocol": "https://",
+            "authEndpoint": "www.dropbox.com",
+            "apiEndpoint": "api.dropbox.com",
+            "apiVersion": "2",
+            "auth": "oauth"
+        },
+        {
+            "oauth1": [
+                {
+                    "request_token": "/request_token",
+                    "authorize": "/authorize",
+                    "access_token": "/access_token"
+                }
+            ]
+        },
+        {
+            "oauth2": [
+                {
+                    "authorize": "/authorize",
+                    "token": "/token",
+                    "token_from_oauth1": "/token_from_oauth1"
+                }
+            ]
+        },
+        {
+            "disable_access_token": "/disable_access_token"
+        },
+        {
+            "dropbox_accounts": "/account/info"
+        },
+        {
+            "files": [
+                {
+                    "get": "/files",
+                    "put": "/files_put"
+                }
+            ]
+        },
+        {
+            "metadata": [
+                {
+                    "meta": "/metadata",
+                    "delta": "/delta",
+                    "cursor": "/delta/latest_cursor",
+                    "longpoll": "/longpoll_delta",
+                    "revisions": "/revisions",
+                    "restore": "/restore",
+                    "search": "/search",
+                    "shares": "/shares",
+                    "media": "/media",
+                    "copy_ref": "/copy_ref",
+                    "thumbnails": "/thumbnails",
+                    "previews": "/previews",
+                    "chunked_upload": "/chunked_upload",
+                    "commit_chunked_upload": "/commit_chunked_upload",
+                    "shared_folders": "/shared_folders",
+                    "save_url": "/save_url",
+                    "save_url_job": "/save_url_job"
+                }
+            ]
+        },
+        {
+            "file_operations": [
+                {
+                    "copy": "/fileops/copy",
+                    "create_folder": "/fileops/create_folder",
+                    "delete": "/fileops/delete",
+                    "move": "/fileops/move"
+                }
+            ]
+        }
+    ]
+}
